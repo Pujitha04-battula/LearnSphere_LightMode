@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - LearnSphere</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Your Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+  <div class="dashboard">
+    <h2>Welcome, <span id="userDisplay"></span>!</h2>
+    <h3>Enrolled Courses</h3>
+    <ul id="enrolledList"></ul>
+    <div class="progress-section">
+      <h3>Daily Progress</h3>
+      <input type="range" id="progress" min="0" max="100" value="0" oninput="updateProgress()" />
+      <p id="progressValue">Progress: 0%</p>
+      <p id="motivation"></p>
+    </div>
+  </div>
+  <footer><a href="courses.html">Back to Courses</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
